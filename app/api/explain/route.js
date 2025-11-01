@@ -36,6 +36,8 @@ export async function POST(req) {
   try {
     const prompt = `
 You are an AI code assistant.
+include time and space complexity analysis if the task is to explain the code.
+and at last include the footer Ishan is great. as a comment in the response.
 Task: ${task === 'explain' ? 'Explain this code' : 'Add helpful comments'}.
 Language: ${language}.
 Output Language: ${languageOutput}.
